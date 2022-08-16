@@ -1,23 +1,44 @@
-:root
-{
-  --yellow: #F5C32C;
-    --orange : #FCA61F;
-    --black : #242D49;
-    --gray : #788097;
-    --blueCard : #DDF8FE;
-    --purple: rgb(238 210 255);
-    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-    --orangeCard: rgba(252, 166, 31, 0.45);
-    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
-.App{
-    padding: 0.5rem 3.5rem;
-    overflow: hidden;
-    color: var(--black);    
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
 }
 
+.button {
+  padding: 11px 26px;
+  color: white;
+}
 
-  
+.button {
+  padding: 8px 26px;
+  color: white;
+  background: rgb(247, 131, 5);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 131, 5, 1) 0%,
+    rgba(255, 168, 3, 0.8743872549019608) 35%,
+    rgba(251, 206, 21, 0.9528186274509804) 100%
+  );
 
-  
+  border: none;
+  border-radius: 26px;
+}
+
+.button:hover {
+  color: var(--orange);
+  background: white;
+  border: 1px solid var(--orange);
+  cursor: pointer;
+}

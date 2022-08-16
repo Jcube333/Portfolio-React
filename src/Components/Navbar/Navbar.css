@@ -1,0 +1,47 @@
+.n-Wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.n-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.n-right {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.n-list {
+  flex: 10;
+}
+.n-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.n-right ul li {
+  list-style: none;
+}
+
+.n-right ul li:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.n-right button {
+  /* -webkit-box-shadow: 12px 21px 34px 8px rgba(255, 131, 36, 0.67);
+  box-shadow: 12px 21px 34px 8px rgba(255, 131, 36, 0.67); */
+}
