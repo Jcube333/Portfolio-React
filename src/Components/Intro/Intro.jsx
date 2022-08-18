@@ -1,15 +1,16 @@
 import React from "react";
 import "./Intro.css";
+import FloatingComp from "../FloatingComp/FloatingComp";
 import Github from "../../img/github.png";
 import Linkedin from "../../img/linkedin.png";
 import Insta from "../../img/instagram.png";
 import Jcube from "../../img/jcube.png";
 import VecB from "../../img/Vector1.png";
 import VecY from "../../img/Vector2.png";
-// import Insta from "../../img/instagram.png";
-// import Insta from "../../img/instagram.png";
-// import Insta from "../../img/instagram.png";
-
+import Crown from "../../img/crown.png";
+import Cpp from "../../img/cpp.png";
+import Emoji from "../../img/glassesimoji.png";
+const skill1 = "Web";
 function intro() {
   return (
     <div className="i-Wrapper">
@@ -38,13 +39,22 @@ function intro() {
         </div>
       </div>
       <div className="i-right">
-        <img src={Jcube} alt="" />
-        <img src={VecB} alt="" />
-        <img src={VecY} alt="" />
+        <img className="profImg" src={Jcube} alt="" />
+        <img className="profImg" src={VecB} alt="" />
+        <img className="profImg" src={VecY} alt="" />
+        <div className="coolEmoji">
+          <img src={Emoji} alt="" />
+        </div>
+        <div className="floatingDiv">
+          <FloatingComp image={Crown} txt1="Web" txt2="Developer" />
+        </div>
 
-        {/* <div className="">
-            <FloatingComp image={} text1={} text2={}/>
-        </div> */}
+        <div className="floatingDiv2">
+          <FloatingComp image={Cpp} txt1="Competitive" txt2="Programmer" />
+        </div>
+
+        <div className="blur"></div>
+        <div className="blur2"></div>
       </div>
     </div>
   );

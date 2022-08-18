@@ -1,12 +1,15 @@
 import React from "react";
 import "./FloatingComp.css";
 
-function FloatingComp(image, text1, text2) {
+function FloatingComp(props) {
   return (
     <div className="float-Wrapper">
-      <img src={image} alt="" />
-      <span>{text1}</span>
-      <span>{text2}</span>
+      <img src={props.image} alt="" />
+      <span>
+        {props.txt1}
+        <br />
+        {props.txt2}
+      </span>
     </div>
   );
 }
