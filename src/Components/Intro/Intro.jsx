@@ -53,8 +53,8 @@ function intro() {
           <FloatingComp image={Cpp} txt1="Competitive" txt2="Programmer" />
         </div>
 
-        <div className="blur"></div>
-        <div className="blur2"></div>
+        <div className="blur i-blur"></div>
+        <div className="blur2 i-blur2"></div>
       </div>
     </div>
   );

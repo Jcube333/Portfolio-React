@@ -24,13 +24,17 @@
 .button {
   padding: 8px 26px;
   color: white;
-  background: rgb(247, 131, 5);
+
   background: linear-gradient(
     90deg,
     rgba(247, 131, 5, 1) 0%,
     rgba(255, 168, 3, 0.8743872549019608) 35%,
     rgba(251, 206, 21, 0.9528186274509804) 100%
   );
+
+  /* -webkit-box-shadow: 33px 34px 40px -18px rgba(234, 151, 34, 0.86);
+  -moz-box-shadow: 33px 34px 40px -18px rgba(239, 148, 21, 0.86); */
+  box-shadow: 2px 8px 30px 2px rgb(255, 199, 95);
 
   border: none;
   border-radius: 26px;
@@ -41,4 +45,22 @@
   background: white;
   border: 1px solid var(--orange);
   cursor: pointer;
+}
+
+.blur {
+  height: 14rem;
+  width: 22rem;
+  filter: blur(72px);
+  border-radius: 50%;
+  background-color: #edd0ff;
+  z-index: -1;
+}
+
+.blur2 {
+  height: 14rem;
+  width: 22rem;
+  filter: blur(72px);
+  border-radius: 50%;
+  background-color: #c1f5ff;
+  z-index: -1;
 }

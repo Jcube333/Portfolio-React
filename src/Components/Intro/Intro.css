@@ -86,3 +86,13 @@
   box-shadow: var(--boxShadow);
   z-index: 3;
 }
+
+.i-blur {
+  top: -10%;
+  right: 0%;
+}
+
+.i-blur2 {
+  bottom: 3%;
+  left: -25%;
+}

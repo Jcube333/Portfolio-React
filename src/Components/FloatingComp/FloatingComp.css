@@ -23,25 +23,3 @@ img {
   top: -20%;
   left: -20%;
 }
-
-.blur {
-  height: 14rem;
-  width: 22rem;
-  filter: blur(72px);
-  border-radius: 50%;
-  background-color: #edd0ff;
-  z-index: -1;
-  top: -10%;
-  right: 0%;
-}
-
-.blur2 {
-  height: 14rem;
-  width: 22rem;
-  filter: blur(72px);
-  border-radius: 50%;
-  background-color: #c1f5ff;
-  z-index: -1;
-  bottom: 3%;
-  left: -25%;
-}

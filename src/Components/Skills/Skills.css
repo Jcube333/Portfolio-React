@@ -1,11 +1,15 @@
 .Skills-Wrapper {
   display: flex;
   height: 90vh;
-  padding: 0rem 4rem;
+  padding: 2rem 4rem;
 }
 
 .s-left {
   flex: 1;
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
 }
 .s-left h2 {
   font-size: 2.5rem;
@@ -19,14 +23,30 @@
 }
 
 .s-left p {
-  font-size: 16px;
+  font-size: 18px;
   color: grey;
+  width: 90%;
+  margin-top: -0.5rem;
 }
 
 .s-button {
-  margin-top: 2rem;
+  width: 35%;
+  margin-top: 1rem;
 }
 
 .s-right {
   flex: 1;
+  position: relative;
+}
+
+.s-blur2 {
+  position: absolute;
+  left: -8rem;
+  bottom: -3rem;
+}
+
+.s-blur1 {
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
 }
