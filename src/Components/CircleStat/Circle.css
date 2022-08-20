@@ -1,0 +1,37 @@
+.Stat-Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-circle {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: white;
+  border-radius: 100%;
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-circle::before {
+  border-radius: 100%;
+  content: "";
+  background-image: linear-gradient(to bottom, #87e6fb 5%, #edb864 100%);
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  right: -8px;
+  left: -8px;
+  z-index: -1;
+  box-shadow: var(--boxShadow);
+}
+
+.Stat-Wrapper > :nth-child(3) {
+  color: var(--orange);
+}

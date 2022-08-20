@@ -1,0 +1,9 @@
+.Stats-Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  height: 40vh;
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+}

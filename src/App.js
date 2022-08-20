@@ -3,6 +3,7 @@ import Intro from "./Components/Intro/Intro";
 
 import "./App.css";
 import Skills from "./Components/Skills/Skills";
+import Stats from "./Components/Stats/Stats";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Intro />
       <Skills />
+      <Stats />
     </div>
   );
 }

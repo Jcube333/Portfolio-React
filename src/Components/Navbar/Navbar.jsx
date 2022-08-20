@@ -13,7 +13,7 @@ function Navbar() {
           <ul>
             <li>Home</li>
             <li>Skills</li>
-            <li>Academics</li>
+            <li>Stats</li>
             <li>Projects</li>
             <li>Certifications</li>
           </ul>
