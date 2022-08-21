@@ -42,7 +42,6 @@ function Certification() {
             <img src={Unstop} alt="" />
           </div>
         </div>
-
         <div className="bg-circle bluebg"></div>
         <div className="bg-circle yellowbg"></div>
       </div>

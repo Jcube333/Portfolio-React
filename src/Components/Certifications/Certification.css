@@ -16,6 +16,7 @@
   position: relative;
   left: 8rem;
   top: 2rem;
+  background-color: white;
 }
 
 .big-circle > * {
@@ -34,6 +35,7 @@
   max-height: 100%;
   transform: scale(0.9);
   border-radius: 90%;
+  box-shadow: var(--boxShadow);
 }
 
 .big-circle > :nth-child(1) {
@@ -55,4 +57,24 @@
 .big-circle > :nth-child(5) {
   left: 6rem;
   bottom: -3rem;
+}
+
+.bg-circle {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.bluebg {
+  background-color: #1949b8;
+  left: 17rem;
+  top: 1rem;
+}
+
+.yellowbg {
+  background-color: #f5c32c;
+  left: 17rem;
+  top: 9rem;
 }

@@ -1,0 +1,39 @@
+.Projects-Wrapper {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Projects-Wrapper > :nth-child(1) {
+  font-size: 2rem;
+  color: var(--black);
+  font-weight: bold;
+}
+.Projects-Wrapper > :nth-child(2) {
+  font-size: 2.5rem;
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.Projects-Wrapper .swiper {
+  overflow: visible;
+}
+
+.portfolio-slider {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-slider .swiper-slide {
+  width: 300rem;
+  height: 25rem;
+}
+
+.Projects-Wrapper img {
+  width: 58rem;
+  height: 26rem;
+  border-radius: 19px;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+}
