@@ -4,6 +4,7 @@ import Intro from "./Components/Intro/Intro";
 import "./App.css";
 import Skills from "./Components/Skills/Skills";
 import Stats from "./Components/Stats/Stats";
+import Certification from "./Components/Certifications/Certification";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Intro />
       <Skills />
       <Stats />
+      <Certification />
     </div>
   );
 }
