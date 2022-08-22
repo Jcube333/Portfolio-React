@@ -1,0 +1,84 @@
+.Contact-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: 2rem 1rem;
+}
+
+.ct-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  height: 70%;
+}
+
+.ct-blur2 {
+  position: absolute;
+  left: -10rem;
+  bottom: -8rem;
+}
+
+.ct-left > :nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.ct-left > :nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  color: var(--orange);
+}
+
+.ct-right {
+  flex: 1;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 3rem;
+  height: 80vh;
+}
+
+form > input,
+textarea {
+  width: 20rem;
+  height: 2rem;
+  border: 3.5px solid var(--orange);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+form > textarea {
+  height: 7rem;
+}
+form > :nth-child(4) {
+  width: 30%;
+}
+
+.ct-blur1 {
+  position: absolute;
+  top: 8rem;
+  left: 9rem;
+}
+
+form span {
+  color: rgb(76, 181, 185);
+  font-size: 1rem;
+  width: 15rem;
+  text-align: center;
+  padding-top: 12px;
+}
