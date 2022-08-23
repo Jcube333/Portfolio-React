@@ -32,8 +32,10 @@
 }
 
 .Projects-Wrapper img {
-  width: 58rem;
-  height: 26rem;
+  width: 29rem;
+  transform: scale(0.8);
+
   border-radius: 19px;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  margin-top: 2rem;
 }

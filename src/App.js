@@ -7,6 +7,7 @@ import Stats from "./Components/Stats/Stats";
 import Certification from "./Components/Certifications/Certification";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Certification />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

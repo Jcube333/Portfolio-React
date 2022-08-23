@@ -74,6 +74,9 @@
   left: -9%;
 }
 
+.coolEmoji img {
+  transform: scale(0.5);
+}
 .floatingDiv {
   top: -8%;
   right: 3%;

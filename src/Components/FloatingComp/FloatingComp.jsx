@@ -4,7 +4,7 @@ import "./FloatingComp.css";
 function FloatingComp(props) {
   return (
     <div className="float-Wrapper">
-      <img src={props.image} alt="" />
+      <img className="float-img" src={props.image} alt="" />
       <span>
         {props.txt1}
         <br />
