@@ -2,14 +2,25 @@ import React from "react";
 import "./Toggle.css";
 import Sun from "@iconscout/react-unicons/icons/uil-sun";
 import Moon from "@iconscout/react-unicons/icons/uil-moon";
-
+import { themeContext } from "../../Context";
+import { useContext } from "react";
 function Toggle() {
-  return (
-    <div className="toggle">
-      <Sun />
-      <Moon />
+  const theme = useContext(themeContext);
 
-      <div className="active"></div>
+  const darkMode = theme.state.darkMode;
+
+  const handleClick = () => {
+    theme.dispatch({ type: "toggle" });
+  };
+  return (
+    <div onClick={handleClick} className="toggle">
+      <Moon />
+      <Sun />
+
+      <div
+        style={darkMode ? { left: "2px" } : { right: "2px" }}
+        className="active"
+      ></div>
     </div>
   );
 }

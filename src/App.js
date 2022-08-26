@@ -18,6 +18,7 @@ function App() {
     <div
       className="App"
       style={{
+        //Based on darkmode state the props will be manipulated for the entire page.
         background: darkMode ? "black" : "",
         color: darkMode ? "white" : "",
       }}
