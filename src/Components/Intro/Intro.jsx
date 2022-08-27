@@ -10,14 +10,20 @@ import VecY from "../../img/Vector2.png";
 import Crown from "../../img/crown.png";
 import Cpp from "../../img/cpp.png";
 import Emoji from "../../img/glassesimoji.png";
-const skill1 = "Web";
-function intro() {
+import { useContext } from "react";
+import { themeContext } from "../../Context";
+// import { motion } from "framer-motion";
+
+function Intro() {
+  const transition = { duration: 2, type: "spring" };
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="i-Wrapper">
       <div className="i-left">
         <div className="i-info">
-          <h1>Hey! I am</h1>
-          <h1>Jcube333</h1>
+          <h1 style={{ color: darkMode ? "white" : "black" }}>Hey! I am</h1>
+          <h1>Jaimin</h1>
           <p>
             I am an avid competitive programmer. I love to design beautiful
             frontends.
@@ -43,7 +49,13 @@ function intro() {
         <img className="profImg" src={VecB} alt="" />
         <img className="profImg" src={VecY} alt="" />
         <div className="coolEmoji">
-          <img src={Emoji} alt="" />
+          <img
+            // initial={{ left: "-36%" }}
+            // whileInView={{ left: "-24%" }}
+            // transition={transition}
+            src={Emoji}
+            alt=""
+          />
         </div>
         <div className="floatingDiv">
           <FloatingComp image={Crown} txt1="Web" txt2="Developer" />
@@ -60,4 +72,4 @@ function intro() {
   );
 }
 
-export default intro;
+export default Intro;

@@ -35,3 +35,7 @@
 .Stat-Wrapper > :nth-child(3) {
   color: var(--orange);
 }
+
+.Stat-Wrapper > :nth-child(1) {
+  color: var(--black);
+}
