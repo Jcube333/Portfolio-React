@@ -58,8 +58,8 @@
 .i-right > :nth-child(1) {
   transform: scale(0.98);
   z-index: 2;
-  top: -15%;
-  left: -3%;
+  top: -14.1%;
+  left: -4%;
   border-radius: 15% 15% 15% 50%;
 }
 .i-right > :nth-child(2) {
@@ -74,8 +74,12 @@
   left: -9%;
 }
 
-.coolEmoji img {
-  transform: scale(0.5);
+.i-right > :nth-child(4) {
+  transform: scale(0.62);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
 }
 .floatingDiv {
   top: -8%;
@@ -98,4 +102,29 @@
 .i-blur2 {
   bottom: 3%;
   left: -25%;
+}
+
+@media screen and (max-width: 480px) {
+  .i-Wrapper {
+    flex-direction: column;
+    height: 180vh;
+  }
+
+  .i-right {
+    left: -3.5rem;
+    transform: scale(0.66);
+  }
+
+  .blur,
+  .blur2 {
+    display: none;
+  }
+  .floatingDiv {
+    top: -9rem !important;
+  }
+
+  .i-right > :nth-child(1) {
+    left: 50px;
+    border-radius: 15% 15% 20% 30%;
+  }
 }

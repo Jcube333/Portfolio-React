@@ -20,3 +20,13 @@
   display: flex;
   gap: 2rem;
 }
+
+@media screen and (max-width: 480px) {
+  .Footer > img {
+    height: 40vh;
+  }
+  .f-content {
+    bottom: 2.5rem;
+    gap: 1.5rem;
+  }
+}

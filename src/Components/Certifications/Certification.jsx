@@ -5,10 +5,11 @@ import Udemy from "../../img/Udemy.webp";
 import Codechef from "../../img/CodeChef.jpeg";
 import Oracle from "../../img/Oracle.png";
 import Unstop from "../../img/unstop.png";
+import { motion } from "framer-motion";
 
 function Certification() {
   return (
-    <div className="Certi-Wrapper">
+    <div id="Certifications" className="Certi-Wrapper">
       <div className="s-left">
         <h2>
           My Acquired <br />
@@ -18,14 +19,21 @@ function Certification() {
           I am always curious to explore the new in Tech. What better way to
           learn than MOOCs!!
         </p>
-
-        <button className="button s-button">See Certificates</button>
+        <a href="https://www.linkedin.com/in/jaimin-judal/">
+          <button className="button s-button">See Certificates</button>
+        </a>
 
         <div className="blur2 s-blur2"></div>
       </div>
 
       <div className="c-right">
-        <div className="big-circle">
+        <motion.div
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          transition={{ duration: 2, type: "spring" }}
+          viewport={{ margin: "-40px" }}
+          className="big-circle"
+        >
           <div className="small-circle">
             <img src={Codechef} alt="" />
           </div>
@@ -41,7 +49,7 @@ function Certification() {
           <div className="small-circle">
             <img src={Unstop} alt="" />
           </div>
-        </div>
+        </motion.div>
         <div className="bg-circle bluebg"></div>
         <div className="bg-circle yellowbg"></div>
       </div>

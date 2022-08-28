@@ -5,10 +5,12 @@ import Heart from "../../img/heartemoji.png";
 import Humble from "../../img/humble.png";
 import Glasses from "../../img/glasses.png";
 import Resume from "./JaiminResume.pdf";
+import { motion } from "framer-motion";
 
 function Skills() {
+  const transition = { duration: 2, type: "spring" };
   return (
-    <div className="Skills-Wrapper">
+    <div id="Skills" className="Skills-Wrapper">
       <div className="s-left">
         <h2>
           My Acquired <br />
@@ -25,28 +27,53 @@ function Skills() {
         <div className="blur2 s-blur2"></div>
       </div>
       <div className="s-right">
-        <div className="card" style={{ left: "14rem" }}>
+        <motion.div
+          initial={{ left: "22rem", top: "19.5rem" }}
+          whileInView={{ left: "13rem", top: "19.5rem" }}
+          transition={transition}
+          className="card"
+          // style={{ left: "14rem" }}
+        >
           <div className="blur s-blur1"></div>
-          <Card
-            image={Heart}
-            title="Design"
-            Desc="Canva, Figma, UI/UX , Wireframing"
-          />
-        </div>
-        <div className="card" style={{ left: "-6rem", top: "13rem" }}>
-          <Card
-            image={Glasses}
-            title="Developer"
-            Desc="Html, Css, JS , ReactJS, ExpressJS, MongoDB"
-          />
-        </div>
-        <div className="card" style={{ left: "12rem", top: "19.5rem" }}>
-          <Card
-            image={Humble}
-            title="CP"
-            Desc="C++, CodeChef, GFG , CodeForces"
-          />
-        </div>
+          <a href="https://www.youtube.com/channel/UCMUGedWGaaSwLPjLn03Gvqg/videos">
+            <Card
+              image={Heart}
+              title="Design"
+              Desc="Canva, Figma, UI/UX , Wireframing"
+            />
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ left: "-10rem", top: "13rem" }}
+          whileInView={{ left: "-6rem", top: "13rem" }}
+          transition={transition}
+          className="card"
+          // style={{ left: "-6rem", top: "13rem" }}
+        >
+          <a href="https://github.com/Jcube333?tab=repositories">
+            <Card
+              image={Glasses}
+              title="Developer"
+              Desc="Html, Css, JS , ReactJS, ExpressJS, MongoDB"
+            />
+          </a>
+        </motion.div>
+        <motion.div
+          initial={{ left: "22rem", top: "1rem" }}
+          whileInView={{ left: "12rem", top: "1 rem" }}
+          transition={transition}
+          className="card"
+          // style={{ left: "12rem", top: "19.5rem" }}
+        >
+          <a href="https://www.codechef.com/users/jcube_333">
+            <Card
+              image={Humble}
+              title="CP"
+              Desc="C++, CodeChef, GFG , CodeForces"
+            />
+          </a>
+        </motion.div>
       </div>
     </div>
   );

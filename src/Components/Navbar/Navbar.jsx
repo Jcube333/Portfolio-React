@@ -1,6 +1,7 @@
 import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
@@ -12,14 +13,27 @@ function Navbar() {
       <div className="n-right">
         <div className="n-list">
           <ul>
-            <li>Home</li>
-            <li>Skills</li>
-            <li>Stats</li>
-            <li>Projects</li>
-            <li>Certifications</li>
+            <Link to="Home" smooth={true}>
+              <li>Home</li>
+            </Link>
+            <Link to="Skills" smooth={true}>
+              <li>Skills</li>
+            </Link>
+            <Link to="Stats" smooth={true}>
+              <li>Stats</li>
+            </Link>
+            <Link to="Certifications" smooth={true}>
+              <li>Certifications</li>
+            </Link>
+            <Link to="Projects" smooth={true}>
+              <li>Projects</li>
+            </Link>
           </ul>
         </div>
-        <button className="button">Contact Me</button>
+
+        <Link to="Contact" smooth={true}>
+          <button className="button">Contact Me</button>
+        </Link>
       </div>
     </div>
   );

@@ -14,9 +14,15 @@ function Footer() {
         <span>Jaiminjagdish@gmail.com</span>
 
         <div className="f-icons">
-          <Insta color="white" size="3rem" />
-          <Linkedin color="white" size="3rem" />
-          <Github color="white" size="3rem" />
+          <a href="https://www.instagram.com/p/CgpRlURh0i_/?hl=en">
+            <Insta color="white" size="3rem" />
+          </a>
+          <a href="https://www.linkedin.com/in/jaimin-judal/">
+            <Linkedin color="white" size="3rem" />
+          </a>
+          <a href="https://github.com/Jcube333">
+            <Github color="white" size="3rem" />
+          </a>
         </div>
       </div>
     </div>

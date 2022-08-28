@@ -39,6 +39,10 @@
   position: relative;
 }
 
+.s-right a {
+  text-decoration: none;
+}
+
 .s-blur2 {
   position: absolute;
   left: -8rem;
@@ -49,4 +53,29 @@
   position: absolute;
   top: 7rem;
   right: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .Skills-Wrapper {
+    flex-direction: column;
+    height: 200vh;
+    margin-top: -5rem;
+  }
+
+  .s-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 7rem 0;
+  }
+
+  .card {
+    position: static !important;
+  }
+
+  .s-button {
+    width: 100%;
+  }
 }

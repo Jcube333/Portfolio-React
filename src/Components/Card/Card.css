@@ -24,6 +24,7 @@
 
 .Card-Wrapper > :nth-child(2) {
   font-size: 25px;
+  color: rgb(5, 5, 73);
 }
 
 .c-button {

@@ -78,3 +78,25 @@
   left: 17rem;
   top: 9rem;
 }
+
+@media screen and (max-width: 480px) {
+  .Certi-Wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 180vh;
+  }
+  .big-circle {
+    transform: scale(0.8) !important;
+    left: -2rem;
+  }
+
+  .c-right {
+    margin-top: -6rem;
+  }
+
+  .bg-circle {
+    left: 6rem;
+    transform: scale(0.8);
+  }
+}

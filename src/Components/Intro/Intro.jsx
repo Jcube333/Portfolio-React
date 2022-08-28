@@ -12,14 +12,15 @@ import Cpp from "../../img/cpp.png";
 import Emoji from "../../img/glassesimoji.png";
 import { useContext } from "react";
 import { themeContext } from "../../Context";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 function Intro() {
   const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="i-Wrapper">
+    <div id="Home" className="i-Wrapper">
       <div className="i-left">
         <div className="i-info">
           <h1 style={{ color: darkMode ? "white" : "black" }}>Hey! I am</h1>
@@ -29,17 +30,18 @@ function Intro() {
             frontends.
           </p>
         </div>
-
-        <div className="i-button button">Contact</div>
+        <Link to="Contact" smooth={true}>
+          <div className="i-button button">Contact</div>
+        </Link>
 
         <div className="i-links">
-          <a href="">
+          <a href="https://github.com/Jcube333">
             <img src={Github} alt="" />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/jaimin-judal/">
             <img src={Linkedin} alt="" />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/p/CgpRlURh0i_/?hl=en">
             <img src={Insta} alt="" />
           </a>
         </div>
@@ -48,22 +50,32 @@ function Intro() {
         <img className="profImg" src={Jcube} alt="" />
         <img className="profImg" src={VecB} alt="" />
         <img className="profImg" src={VecY} alt="" />
-        <div className="coolEmoji">
-          <img
-            // initial={{ left: "-36%" }}
-            // whileInView={{ left: "-24%" }}
-            // transition={transition}
-            src={Emoji}
-            alt=""
-          />
-        </div>
-        <div className="floatingDiv">
-          <FloatingComp image={Crown} txt1="Web" txt2="Developer" />
-        </div>
 
-        <div className="floatingDiv2">
+        <motion.img
+          initial={{ left: "-40%" }}
+          whileInView={{ left: "-24%" }}
+          transition={transition}
+          src={Emoji}
+          alt=""
+        />
+
+        <motion.div
+          initial={{ top: "-8%", right: "-20%" }}
+          whileInView={{ top: "-8%", right: "5%" }}
+          transition={transition}
+          className="floatingDiv"
+        >
+          <FloatingComp image={Crown} txt1="Web" txt2="Developer" />
+        </motion.div>
+
+        <motion.div
+          initial={{ bottom: "30%", left: "-20%" }}
+          whileInView={{ bottom: "30%", left: "4%" }}
+          transition={transition}
+          className="floatingDiv2"
+        >
           <FloatingComp image={Cpp} txt1="Competitive" txt2="Programmer" />
-        </div>
+        </motion.div>
 
         <div className="blur i-blur"></div>
         <div className="blur2 i-blur2"></div>

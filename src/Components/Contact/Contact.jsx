@@ -33,7 +33,7 @@ function Contact() {
       );
   };
   return (
-    <div className="Contact-Wrapper">
+    <div id="Contact" className="Contact-Wrapper">
       <div className="ct-left">
         <span style={{ color: darkMode ? "white" : "black" }}>
           Get in Touch

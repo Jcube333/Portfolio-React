@@ -13,7 +13,7 @@ function Projects() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="Projects-Wrapper">
+    <div id="Projects" className="Projects-Wrapper">
       <span style={{ color: darkMode ? "white" : "black" }}>My Portfolio</span>
       <span>Projects</span>
 

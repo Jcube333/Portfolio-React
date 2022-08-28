@@ -14,6 +14,7 @@
 .n-name {
   font-size: 1.3rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .n-right {
@@ -44,4 +45,13 @@
 .n-right button {
   /* -webkit-box-shadow: 12px 21px 34px 8px rgba(255, 131, 36, 0.67);
   box-shadow: 12px 21px 34px 8px rgba(255, 131, 36, 0.67); */
+}
+
+@media screen and (max-width: 480px) {
+  .n-list ul {
+    display: none;
+  }
+  .n-right .button {
+    display: none;
+  }
 }
